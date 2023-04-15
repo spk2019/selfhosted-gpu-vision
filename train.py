@@ -6,7 +6,8 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
 import matplotlib.pyplot as plt
-
+import os
+os.environ['CUDA_LAUNCH_BLOCKING'] = "1"
 batch_size=64
 
 train_loader = torch.utils.data.DataLoader(
