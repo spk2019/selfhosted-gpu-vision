@@ -1,4 +1,4 @@
---i https://download.pytorch.org/whl/cu118
+--find-links https://download.pytorch.org/whl/cu118
 torch
 torchvision
 matplotlib
