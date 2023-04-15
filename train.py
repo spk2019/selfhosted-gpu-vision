@@ -7,6 +7,7 @@ import torch.nn.functional as F
 import torch.optim as optim
 import matplotlib.pyplot as plt
 
+print("cuda version",torch.version.cuda)
 batch_size=64
 
 train_loader = torch.utils.data.DataLoader(
