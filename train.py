@@ -6,7 +6,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
 import matplotlib.pyplot as plt
-
+#batch size
 batch_size=64
 
 train_loader = torch.utils.data.DataLoader(
