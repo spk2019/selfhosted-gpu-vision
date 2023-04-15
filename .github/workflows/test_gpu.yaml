@@ -2,7 +2,8 @@ name: model-training
 on: [push]
 jobs:
   run:
-    runs-on: [self-hosted, cml, gpu]
+    runs-on: [self-hosted]
+    container: ghcr.io/iterative/cml:0-dvc2-base1
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
