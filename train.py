@@ -8,6 +8,8 @@ import torch.optim as optim
 import matplotlib.pyplot as plt
 
 batch_size=64
+print(torch.cuda.get_device_name())
+print("cuda version",torch.version.cuda)
 
 train_loader = torch.utils.data.DataLoader(
   torchvision.datasets.MNIST('/files/', train=True, download=True,
