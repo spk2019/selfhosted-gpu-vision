@@ -8,6 +8,10 @@ import torch.optim as optim
 import matplotlib.pyplot as plt
 
 print("cuda version",torch.version.cuda)
+device = "cuda" if torch.cuda.is_available() else "cpu"
+print(f"DEVICE: {torch.cuda.get_device_name()}")
+print(f"GPU AVAILABLE : {torch.cuda.is_available()}")
+print(f"RUNNING ON : {device}")
 batch_size=64
 ##
 train_loader = torch.utils.data.DataLoader(
