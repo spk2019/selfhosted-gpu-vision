@@ -22,6 +22,11 @@ jobs:
           pip install -r requirements.txt
           python train.py
           
+          CODEBLOCK="\`\`\`".
+          echo $CODEBLOCK >report.md
+          nvidia-smi >> report.md
+          echo $CODEBLOCK >> report.md
+          
           echo 'My first CML report' > report.md
           
           cml comment create --publish report.md
