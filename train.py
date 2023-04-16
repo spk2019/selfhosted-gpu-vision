@@ -6,7 +6,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
 import matplotlib.pyplot as plt
-
+###
 print("cuda version",torch.version.cuda)
 device = "cuda" if torch.cuda.is_available() else "cpu"
 print(f"DEVICE: {torch.cuda.get_device_name()}")
