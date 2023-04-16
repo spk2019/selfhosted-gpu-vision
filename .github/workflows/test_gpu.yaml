@@ -6,6 +6,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
+      - uses: actions/setup-node@v3
+        with:
+            node-version: '16'
+      - uses: actions/checkout@v3
+      - uses: iterative/setup-cml@v1
+        with:
+          sudo: false
     
       - name: Train model
         env:
