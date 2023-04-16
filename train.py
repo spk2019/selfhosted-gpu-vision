@@ -128,7 +128,7 @@ def test(dataloader,model):
     return loss.item(),test_accuracy
 
 
-epochs =2
+epochs =5 
 test_accuracy = []
 train_accuracy= []
 test_loss=[]
