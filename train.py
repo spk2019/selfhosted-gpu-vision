@@ -13,7 +13,8 @@ print(f"DEVICE: {torch.cuda.get_device_name()}")
 print(f"GPU AVAILABLE : {torch.cuda.is_available()}")
 print(f"RUNNING ON : {device}")
 batch_size=64
-##
+
+
 train_loader = torch.utils.data.DataLoader(
   torchvision.datasets.MNIST('/files/', train=True, download=True,
                              transform=torchvision.transforms.Compose([
