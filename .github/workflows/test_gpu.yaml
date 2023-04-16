@@ -2,11 +2,11 @@ name: model-training
 on: [push]
 jobs:
   run:
-    runs-on: [self-hosted, cml, gpu]
+    runs-on: [self-hosted]
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
-      - uses: iterative/setup-cml@v1
+    
       - name: Train model
         env:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
